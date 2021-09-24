@@ -1,0 +1,9 @@
+version: 2
+
+sources: 
+  - name: traffic_data_models
+    description: 'Data base for traffic DWH'
+    # schema: traffic_data
+    # tables:
+    #   - name: stations
+    #     description: 'Sensor station information'
