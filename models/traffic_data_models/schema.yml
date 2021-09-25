@@ -3,7 +3,103 @@ version: 2
 sources: 
   - name: traffic_data_models
     description: 'Data base for traffic DWH'
-    # schema: traffic_data
-    # tables:
-    #   - name: stations
-    #     description: 'Sensor station information'
+    schema: traffic_data
+    tables:
+      - name: stations
+        description: 'Sensor station information'
+
+models:
+    - name: traffic_data_models__stations
+      description: "Traffic station discription"
+      columns:
+          - name: ID
+            description: "The Station ID which is unique"
+            tests:
+                - unique
+          - name: FWY
+            description: "FWY"
+          - name: DIR
+            description: "The Station Direction"
+          - name: District
+            description: "The Station Disctrict"
+          - name: County
+            description: "The Station County"
+          - name: City
+            description: "The Station city"
+          - name: State_PM
+            description: "The Station State_PM"
+          - name: Abs_PM
+            description: "The Station Abs_PM"
+          - name: Latitude
+            description: "The Station Latitude location"
+          - name: Longitude
+            description: "The Station Longitude location"
+          - name: Type
+            description: "The Station Type"
+          - name: Lanes
+            description: "The Station Lanes"
+          - name: Name
+            description: "The Station Name"
+
+    - name: traffic_data_models__stations_dir
+      description: "Traffic station found by the west side discription"
+      columns:
+          - name: ID
+            description: "The Station ID which is unique"
+            tests:
+                - unique
+          - name: FWY
+            description: "FWY"
+          - name: DIR
+            description: "The Station Direction"
+          - name: District
+            description: "The Station Disctrict"
+          - name: County
+            description: "The Station County"
+          - name: City
+            description: "The Station city"
+          - name: State_PM
+            description: "The Station State_PM"
+          - name: Abs_PM
+            description: "The Station Abs_PM"
+          - name: Latitude
+            description: "The Station Latitude location"
+          - name: Longitude
+            description: "The Station Longitude location"
+          - name: Type
+            description: "The Station Type"
+          - name: Lanes
+            description: "The Station Lanes"
+          - name: Name
+            description: "The Station Name"
+    - name: traffic_data_models__stations_Lane
+      description: "Traffic station found by Lane 2 discription"
+      columns:
+          - name: ID
+            description: "The Station ID which is unique"
+            tests:
+                - unique
+          - name: FWY
+            description: "FWY"
+          - name: DIR
+            description: "The Station Direction"
+          - name: District
+            description: "The Station Disctrict"
+          - name: County
+            description: "The Station County"
+          - name: City
+            description: "The Station city"
+          - name: State_PM
+            description: "The Station State_PM"
+          - name: Abs_PM
+            description: "The Station Abs_PM"
+          - name: Latitude
+            description: "The Station Latitude location"
+          - name: Longitude
+            description: "The Station Longitude location"
+          - name: Type
+            description: "The Station Type"
+          - name: Lanes
+            description: "The Station Lanes"
+          - name: Name
+            description: "The Station Name"
